@@ -1,0 +1,68 @@
+.login__box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login__box:first-of-type {
+  animation: move-right 0.7s ease-out backwards;
+}
+
+.login__box:last-of-type {
+  animation: move-left 0.7s ease-out 0.5s backwards;
+}
+
+.email__label,
+.password__label {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.login__box--email,
+.login__box--password {
+  width: 70%;
+  padding: 0.5rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.login__box--email:focus,
+.login__box--password:focus {
+  outline: none;
+  border: 0.1rem solid #741188;
+  background-color: #8b0ba517;
+}
+
+@keyframes move-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-4rem);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(0.2rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes move-left {
+  0% {
+    opacity: 0;
+    transform: translateX(4rem);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(-0.2rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.login__box.invalid input {
+  background-color: #fbdada;
+  border-color: #ff2020;
+}

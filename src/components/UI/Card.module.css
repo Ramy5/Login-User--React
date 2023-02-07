@@ -1,0 +1,10 @@
+.card {
+  position: relative;
+  width: 47rem;
+  height: 13rem;
+  margin: 2rem auto;
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(4, 4, 4, 0.2),
+    -0.1rem -0.1rem 1rem rgba(4, 4, 4, 0.2);
+}

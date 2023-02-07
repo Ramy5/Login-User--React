@@ -1,0 +1,11 @@
+.header {
+  background-color: #741188;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__head {
+  color: #fff;
+}
